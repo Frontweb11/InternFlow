@@ -5,8 +5,7 @@ import toast from "react-hot-toast";
 const AuthContext = createContext();
 export const useAuth = () => useContext(AuthContext);
 
-const API = "http://localhost:5000/api";
-
+const API = "https://internflow-backend.onrender.com/api";
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
